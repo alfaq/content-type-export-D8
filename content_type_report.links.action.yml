@@ -1,0 +1,10 @@
+content_type_export.export_all:
+  route_name: content_type_report.export_all
+  title: 'Export all'
+  appears_on:
+    - content_type_report.list
+content_type_export.export_one:
+  route_name: content_type_report.export
+  title: 'Export'
+  appears_on:
+    - content_type_report.type

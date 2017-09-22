@@ -1,0 +1,41 @@
+# Page list
+content_type_report.list:
+  path: '/admin/reports/content-type-report'
+  defaults:
+    _title: 'Content type report'
+    _controller: '\Drupal\content_type_report\Controller\ContentTypeReportController::content_type_report_list'
+  requirements:
+    _permission: 'administer site configuration'
+
+#Page view
+content_type_report.type:
+  path: '/admin/reports/content-type-report/{type}'
+  defaults:
+    _title: 'Content type'
+    _controller: '\Drupal\content_type_report\Controller\ContentTypeReportController::content_type_report_type'
+  requirements:
+    _permission: 'administer site configuration'
+
+content_type_report.export:
+  path: '/admin/reports/content-type-report/{type}/export'
+  defaults:
+    _title: 'Content type report'
+    _controller: '\Drupal\content_type_report\Controller\ContentTypeReportController::content_type_report_export'
+  requirements:
+    _permission: 'administer site configuration'
+
+content_type_report.export_all:
+  path: '/admin/reports/content-type-report/export'
+  defaults:
+    _title: 'Export all content types'
+    _controller: '\Drupal\content_type_report\Controller\ContentTypeReportController::content_type_report_export_all'
+  requirements:
+    _permission: 'administer site configuration'
+# Page settings
+content_type_report.settings:
+  path: '/admin/reports/content-type-report/settings'
+  defaults:
+    _title: 'Settings for report'
+    _form: '\Drupal\content_type_report\Form\ContentTypeReportForm'
+  requirements:
+    _permission: 'administer site configuration'

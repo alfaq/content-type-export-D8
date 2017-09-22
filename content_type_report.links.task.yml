@@ -1,0 +1,11 @@
+content_type_report.list:
+  title: List
+  route_name : content_type_report.list
+  base_route: content_type_report.list
+  weight: 10
+
+content_type_report.settings:
+  title: Settings
+  route_name: content_type_report.settings
+  base_route: content_type_report.list
+  weight: 20

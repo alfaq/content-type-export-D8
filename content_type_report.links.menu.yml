@@ -1,0 +1,5 @@
+content_type_report.config:
+  title: 'Content type report'
+  parent: system.admin_reports
+  route_name: content_type_report.list
+  weight: 10

@@ -1,0 +1,7 @@
+name: Content type report
+description: Create report about content types and export him
+core: 8.x
+package: Custom
+type: module
+
+configure: content_type_report.settings
